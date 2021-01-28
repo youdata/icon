@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>汉字图标</title>
+    <script src="./lib/sand.js"></script>
+    <!-- for drag effect -->
+    <link rel="stylesheet" href="./style/font.css" type="text/css" />
+    <link rel="stylesheet" href="./style/goldenlayout-base.css" type="text/css" />
+    <link rel="stylesheet" href="./style/goldenlayout-light-theme.css" type="text/css"
+    />
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader">
+        Loading services , please wait ...
+    </div>
+    <div id="container">
+    </div>
+    <script>
+        (function()
+        {
+            var center = new sand.Center()
+            var layout = "single"
+            center.on("inited", (e) =>
+            {
+                var d = center.createLayout(layout)
+                d.session = "./panel.json"
+                d.publish = true
+                document.getElementById("loader").style.display =
+                    "none"
+                document.getElementById("container").appendChild(
+                    d)
+            })
+            center.init()
+
+        })()
+    </script>
+</body>
+
+</html>
