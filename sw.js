@@ -1,7 +1,7 @@
 importScripts("cache-polyfill.js")
 
 var PREFIX = "icon"
-var CACHE_VERSION = 'icon-v0.0.1';
+var CACHE_VERSION = 'icon-v0.0.2';
 var CACHE_FILES = [
     "./manifest.json",
     "./lib/sand.js", 
@@ -9,7 +9,13 @@ var CACHE_FILES = [
     "./fonts/XinDiZhaoMeng-1.woff",
     "./fonts/Zhuan.woff",
     "./img/icon-192.png",
-    "./img/icon-512.png"
+    "./img/icon-512.png",
+    "./panel.json",
+    "./Loading_icon.gif",
+    "./style/font.css",
+    "./img/icon-512.png",
+    "./img/icon-192.png",
+    "./fonts/MaterialIcons.woff2"
 ];
 
 const cacheResources = async () => {
