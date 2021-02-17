@@ -13,8 +13,6 @@ var CACHE_FILES = [
     "./panel.json",
     "./Loading_icon.gif",
     "./style/font.css",
-    "./img/icon-512.png",
-    "./img/icon-192.png",
     "./fonts/MaterialIcons.woff2"
 ];
 
