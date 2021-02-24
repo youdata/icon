@@ -1,7 +1,7 @@
 importScripts("cache-polyfill.js")
 
 var PREFIX = "icon"
-var CACHE_VERSION = 'icon-v0.0.4';
+var CACHE_VERSION = 'icon-v0.0.5';
 var CACHE_FILES = [
     "./manifest.json",
     "./lib/sand.js", 
